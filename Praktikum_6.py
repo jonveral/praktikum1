@@ -7,16 +7,14 @@
 # nomor_urut : integer
 
 # ALGORITMA
-# Input
 nomor_urut = int(input("Masukkan Nomor Urut: "))
 x = int(input("Masukkan batas bawah (x): "))
 y = int(input("Masukkan batas atas (y): "))
 
-f1 = [0] * nomor_urut  # Array untuk menyimpan faktor prima
-f2 = 0  # Counter untuk jumlah faktor prima
+f1 = [0] * nomor_urut  
+f2 = 0  
 n = nomor_urut
 
-# Menentukan faktor prima
 for i in range(2, n + 1):
     while n % i == 0:
         sudah_ada = False
@@ -30,11 +28,9 @@ for i in range(2, n + 1):
             f2 += 1
         n //= i
 
-# Array tetap untuk menyimpan ID Pengguna valid
 id1 = [0] * (y - x + 1)
-id2 = 0  # Counter untuk jumlah ID Pengguna valid
+id2 = 0  
 
-# Mencari ID Pengguna yang valid
 for i in range(x, y + 1):
     valid = False
     j = 0
@@ -46,7 +42,6 @@ for i in range(x, y + 1):
         id1[id2] = i
         id2 += 1
 
-# Output
 if id2 > 0:
     print("Id Pengguna yang valid =", end=" [")
     for k in range(id2):
