@@ -7,7 +7,6 @@
 # batas_min : integer
 
 # ALGORITMA
-# Input
 banyak_data = int(input("Masukkan banyak data : "))
 luas_tanah = [0] * banyak_data
 
@@ -22,7 +21,6 @@ for luas in luas_tanah:
         if terkecil is None or luas < terkecil:
             terkecil = luas
 
-#Output
 if terkecil is not None:
     print(f"Luas tanah terkecil yang dapat dipilih adalah {terkecil}.")
 else:
