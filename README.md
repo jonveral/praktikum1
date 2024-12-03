@@ -1,2 +1,2 @@
-# praktikum1
-halo ges
+Prakberkom
+Semoga bermanfaat
