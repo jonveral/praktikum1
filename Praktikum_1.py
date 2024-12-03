@@ -8,15 +8,12 @@
 # rata_rata  :  float
 
 # ALGORTIMA
-# Input
 kuis1 = float(input("Masukkan nilai kuis pertama: "))
 kuis2 = float(input("Masukkan nilai kuis kedua: "))
 kuis3 = float(input("Masukkan nilai kuis ketiga: "))
 
-# Hitung rata-rata
 rata_rata = (kuis1 + kuis2 + kuis3) / 3
 
-# Tentukan status kelulusan
 if rata_rata >= 80:
     print("Tuan Leo mendapatkan nilai Lulus Memuaskan.")
 elif rata_rata >= 70:
